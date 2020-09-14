@@ -108,7 +108,7 @@ public final class LithiumDoublePairList implements PairList {
     }
 
     @Override
-    public boolean forEachPair(Consumer predicate) {
+    public boolean forEachPair(PairList.Consumer predicate) {
         int l = this.pairs.size() - 1;
 
         for (int i = 0; i < l; i++) {

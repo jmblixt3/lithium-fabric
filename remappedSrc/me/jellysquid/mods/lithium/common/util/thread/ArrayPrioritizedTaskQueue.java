@@ -45,7 +45,7 @@ public class ArrayPrioritizedTaskQueue implements TaskQueue<TaskQueue.Prioritize
     }
 
     @Override
-    public boolean add(PrioritizedTask task) {
+    public boolean add(TaskQueue.PrioritizedTask task) {
         this.size.incrementAndGet();
 
         Queue<Runnable> queue = this.queues[task.getPriority()];

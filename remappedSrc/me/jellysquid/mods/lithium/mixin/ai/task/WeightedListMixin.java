@@ -17,6 +17,6 @@ public class WeightedListMixin<U> implements WeightedListIterable<U> {
 
     @Override
     public Iterator<U> iterator() {
-        return new ListIterator<>(this.entries.iterator());
+        return new WeightedListIterable.ListIterator<>(this.entries.iterator());
     }
 }
